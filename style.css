@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 100%; /* 16px*/
+  --header-height: 4.5rem;
+  
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
 #header{
   background-image: url(assets/images/top.png);  
   width: 100%;
@@ -16,20 +28,69 @@
 }
 
 h1{
+  width: 32rem;
   color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.cards.grid {
+
+/*main*/
+
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: white;
+  -webkit-font-smoothing: auto;
+}
+
+.cards {
   margin: 5rem;
   gap: 3.5rem;
   display: flex;
 }
 
+
 .card {
   padding: 4rem 2rem;
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+  width: 30%;
 }
 
+.drawn{
+  width: 10rem;
+  height: 10rem;
+}
+
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+}
+
+.image2{
+  padding: 6rem 2.5rem;
+  width: 44.5rem;
+  height: auto;
+}
+
+.coral{
+  background-color: #FFF0ED;
+}
+
+/* Footer*/
+footer{
+  background-color: rgb(25, 25, 25);
+}
 
 
