@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth ;
+}
+
 :root {
   font-size: 100%; /* 16px*/
   --header-height: 4.5rem;
@@ -193,9 +197,11 @@ p{
   align-items: center;
   padding: 0 1.5rem;
   border-radius: 1.5rem;
-  font: 500 1rem var(--body-font);
+  font: 500 var(--title-font) var(--paragraph-font-size);
+  text-decoration: none;
   transition: background 0.5s;
   cursor: pointer;
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5); 
   
 }
 
@@ -203,9 +209,50 @@ p{
   background: coral;
 }
 
+.section .text{
+  margin-top: 5rem;
+  text-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5)
+}
+
+.section .text2{
+  margin-top: 7rem;
+  text-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5)
+}
+
 /* Footer*/
 footer{
   background-color: rgb(25, 25, 25);
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+footer a{
+  text-decoration: none;
+  color: white;
+}
 
+.baseboard{
+  padding: 1rem 3rem;
+}
+
+.baseboard a{
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+
+footer .social {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
+footer .social a {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  transform: translateY(-5px);
+}
