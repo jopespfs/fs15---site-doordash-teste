@@ -221,26 +221,42 @@ p{
 
 /* Footer*/
 footer{
-  background-color: rgb(25, 25, 25);
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-color: rgb(25, 25, 25); 
 }
 
 footer a{
   text-decoration: none;
   color: white;
+  padding: 0 0.5rem;
+}
+
+.head, .near, .cities, .torso{
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: block;
+  font: 500 1.2rem var(--title-font);
+  color: white;
+}
+
+.business, .help, .know, .category, .city{
+  font: 500;
+  font-size: 0.875rem;
+  font-family: "roboto";
+  padding: 1rem;
+}
+
+li{
+  list-style: none;
 }
 
 .baseboard{
-  padding: 1rem 3rem;
-}
-
-.baseboard a{
-  text-decoration: none;
-  color: white;
-  padding: 0 1rem;
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
 }
 
 footer .social {
