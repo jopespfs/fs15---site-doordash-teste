@@ -11,43 +11,110 @@
   --header-height: 4.5rem;
   
   /* fonts */
-  --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
 
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
+  --title-font-size: 3.75rem;
+  --subtitle-font-size: 2rem;
+  --paragraph-font-size: 1rem;
+  
+  --title-font: 'Roboto', sans-serif;  
 }
 
-#header{
+header{
+  position: relative;
   background-image: url(assets/images/top.png);  
   width: 100%;
-  height: 100vh;
+  height: 36.25rem;
   background-repeat:no-repeat ;
   background-size:cover;
   text-align: center;
 }
 
+.logo{
+  position: relative;
+  top: 3%;  
+}
+
+.logo span{
+  padding: 1%;
+}
+
 h1{
-  width: 32rem;
+  font: 700 var(--title-font-size) var(--title-font);
   color: white;
   padding: 1rem;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.search{
+  background-color: white;
+  border-radius: 2rem;
+  width: 25rem;
+  position: relative;
+  top: 20rem;
+  left: 50%;
+  transform: translate(-50%,-50%);  
+}
+
+.search input{
+  position: absolute;
+  width: 17.5rem;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: none;
+  background-color: 0%;
+}
+
+.search a{
+  display: block;
+  position: relative;
+  bottom: .5rem;
+  left: 41%;
+ 
+}
+
+.search .location-icon{
+  display: block;
+  position: relative;
+  top: 1.3rem;
+  left: 5%;
+  
+}
+
+
+.login a{
+  font: 500 var(--paragraph-font-size) var(--title-font);
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
 }
 
 
 /*main*/
 
-.title {
-  font: 700 var(--title-font-size) var(--title-font);
-  color: white;
-  -webkit-font-smoothing: auto;
+h2{
+  text-align: left;
+  padding: 2rem 0rem;
 }
 
+.subtitle {
+  font: 700 var(--subtitle-font-size) var(--title-font);
+}
+
+p{
+  font: 500 var(--paragraph-font-size) var(--title-font);
+}
+
+/* cards */
+
 .cards {
-  margin: 5rem;
+  margin: 2rem 5rem;
   gap: 3.5rem;
   display: flex;
 }
@@ -55,7 +122,6 @@ h1{
 
 .card {
   padding: 4rem 2rem;
-  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
   width: 30%;
 }
@@ -65,27 +131,76 @@ h1{
   height: 10rem;
 }
 
-
-.grid {
-  display: grid;
-  gap: 2rem;
+.link{
+  font: 500 var(--paragraph-font-size) var(--title-font);
+  color: red;
+  
 }
+
+/* imagens*/
 
 .section {
   width: 100%;
   height: auto;
   display: flex;
-  text-align: center;
+  
+}
+
+.subtitle2 {
+  font: 700 var(--subtitle-font-size) var(--title-font);
+  width: 20rem;
+}
+
+.text{
+  font: 500 var(--title-font) var(--paragraph-font-size);
+  text-align: left;
+  
+  height: 4.5rem;
+  padding: 2.5rem;
+}
+
+.text2{
+  font: 500 var(--title-font) var(--paragraph-font-size);
+  text-align: left;
+  
+  height: 4.5rem;
+  padding: 2.5rem;
+}
+
+
+.image{
+  width: 50rem;
+  height: 30rem;
+  padding: 0 2.5rem;
 }
 
 .image2{
-  padding: 6rem 2.5rem;
+  padding: 2.5rem;
   width: 44.5rem;
-  height: auto;
+  height: 32rem;
 }
 
 .coral{
   background-color: #FFF0ED;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  margin-top: 0.625rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.5s;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background: coral;
 }
 
 /* Footer*/
