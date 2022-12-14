@@ -252,15 +252,24 @@ p{
 }
 
 /* Footer*/
+
 footer{
   background-color: rgb(25, 25, 25); 
-padding: 3rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 
 footer a{
   text-decoration: none;
   color: white;
+}
+
+footer .terms a{
+  padding: 0 2rem;
+}
+
+footer .social a{
   padding: 0 0.5rem;
+
 }
 
 .head, .near, .cities, .torso{
@@ -278,7 +287,7 @@ h3 {
   
 
 .business, .help, .know, .category, .city{
-  font: 500;
+  font: 300;
   font-size: 0.875rem;
   font-family: "roboto";
   padding: 1rem;
@@ -293,6 +302,9 @@ li{
   padding: 2rem 6rem;
   justify-content: space-between;
   -webkit-box-pack: justify;
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 0.75rem;
 }
 
 footer .social {
