@@ -33,9 +33,41 @@ header{
   text-align: center;
 }
 
+.button2{
+  position: absolute;
+  right: 10%;
+  margin-top: 0.625rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  font-family: "roboto";
+  text-decoration: none;  
+  color: white;
+}
+
+.button2:hover{
+  color: yellow ;
+}
+
+header .button{
+  position: absolute;
+  right: 3%;
+  background-color: white;
+  color: red;
+}
+
+header .button:hover {
+  background: red;
+  color: white;
+}
 .logo{
   position: relative;
-  top: 3%;  
+  width: 40rem;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%,-50%);
 }
 
 .logo span{
@@ -197,7 +229,7 @@ p{
   align-items: center;
   padding: 0 1.5rem;
   border-radius: 1.5rem;
-  font: 500 var(--title-font) var(--paragraph-font-size);
+  font-family: "roboto";
   text-decoration: none;
   transition: background 0.5s;
   cursor: pointer;
@@ -222,6 +254,7 @@ p{
 /* Footer*/
 footer{
   background-color: rgb(25, 25, 25); 
+padding: 3rem 0 0 0;
 }
 
 footer a{
@@ -236,10 +269,13 @@ footer a{
 }
 
 h3 {
-  display: block;
   font: 500 1.2rem var(--title-font);
   color: white;
-}
+  margin-top: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  }
+  
 
 .business, .help, .know, .category, .city{
   font: 500;
